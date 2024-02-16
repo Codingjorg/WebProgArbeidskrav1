@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div style="border: solid aqua 3px;">
+    <h1>Bestilling av Kinobiletter</h1>
+    <div>
+        <p>Velg film:</p>
+        <select id="nedfallMeny">
+            <option></option>
+            <option>James Bond</option>
+            <option>The Dark Knight Rises</option>
+            <option>Shrek 7</option>
+        </select><br>
+    </div>
+    <div>
+        <p>Antall Biletter</p>
+        <input id="AntallID"><br>
+    </div>
+    <div>
+        <p>Fornavn</p>
+        <input id="FornavnID"><br>
+        <p>Etternavn</p>
+        <input id="EtternavnID"><br>
+        <p>Telefonnr</p>
+        <input id="TelefonnrID"><br>
+        <p>Epost</p>
+        <input id="EpostID">
+    </div><br>
+    <button id="Kjopknapp">Kjøp biletter</button>
+    <br>
+    <table id="biletterKjopt"></table>
+
+    <h2 id="AlleBilleterID">Alle biletter</h2>
+    <button id="Slettknapp">Slett alle bilettene</button>
+    <script type="text/javascript" src="Index.js">
+
+    </script>
+    <style>
+        table, td{
+            border: black solid 1.5px;
+            margin: 0;
+            padding: 1%;
+            min-width: 95%;
+            max-width: 105%;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        p, input, select{
+            display: inline-block;
+        }
+    </style>
+</div>
+</body>
+</html>
